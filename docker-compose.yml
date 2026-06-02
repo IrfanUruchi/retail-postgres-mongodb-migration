@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: nosql_postgres
+    environment:
+      POSTGRES_DB: retail_db
+      POSTGRES_USER: retail_user
+      POSTGRES_PASSWORD: retail_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mongo:
+    image: mongo:7
+    container_name: nosql_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  postgres_data:
+  mongo_data:
