@@ -399,10 +399,3 @@ The dashboard is read-only for the migrated MongoDB analytics collections. This 
 
 The dataset CSV files are not included in this repository. The README explains how to download the dataset and where to place the files before running the project.
 
-## Repository
-
-GitHub repository:
-
-```text
-https://github.com/IrfanUruchi/retail-postgres-mongodb-migration
-```
